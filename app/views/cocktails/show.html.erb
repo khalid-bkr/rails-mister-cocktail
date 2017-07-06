@@ -18,6 +18,7 @@
         <%= link_to  "Delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-warning" %><hr>
         <% end %>
       </div>
+      <h3>Add a dose:</h3>
       <%= render "doses/form_doses", dose:Dose.new %>
       <%= link_to "Ingredients", ingredients_path  %>
 
