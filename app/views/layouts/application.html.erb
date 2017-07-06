@@ -11,6 +11,25 @@
   </head>
 
   <body>
+  <div class="navbar-wagon">
+  <!-- Logo -->
+  <%= link_to "Cocktails",root_path, class: "navbar-wagon-brand btn btn-success" %>
+
+  <%= link_to "Make your Cocktail" , new_cocktail_path, class: "btn btn-success"%>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm"></div>
+
+    <!-- Search form -->
+    <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+
+    <!--  -->
+</div>
     <%= yield %>
   </body>
 </html>

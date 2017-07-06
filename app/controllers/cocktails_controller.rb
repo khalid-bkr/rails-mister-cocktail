@@ -28,6 +28,8 @@ class CocktailsController < ApplicationController
   end
 
   def destroy       # DELETE /restaurants/:id
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.destroy
   end
 
   private
