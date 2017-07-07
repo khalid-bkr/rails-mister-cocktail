@@ -4,7 +4,10 @@
       <% @cocktails.each do |cocktail| %>
       <div class="row">
         <div class="col-xs-6 info">
-          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+        <ul class="list-inline">
+         <li><h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+          <%= image_tag cocktail.photo.url(:bright_face) %></li>
+        </ul>
         </div>
       </div>
       <% end %>
